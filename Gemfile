@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.1'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 # Use sqlite3 as the database for Active Record
@@ -18,6 +16,8 @@ gem 'will_paginate'
 gem 'will-paginate-i18n'
 gem 'database_rewinder'
 gem 'httparty'
+# Just not break Ruby 3.0
+gem 'rexml'
 
 group :development, :test do
   gem 'byebug'

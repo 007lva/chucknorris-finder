@@ -1,3 +1,5 @@
+This application has been tested with Ruby 2.7 and 3.0.
+
 # Instructions
 
 - Clone the repository
