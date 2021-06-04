@@ -16,6 +16,7 @@ gem 'webpacker'
 gem 'hamlit-rails'
 gem 'will_paginate'
 gem 'database_rewinder'
+gem 'httparty'
 
 group :development, :test do
   gem 'byebug'
