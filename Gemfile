@@ -14,6 +14,7 @@ gem 'sass-rails', '>= 6'
 gem 'jbuilder', '~> 2.7'
 gem 'webpacker'
 gem 'hamlit-rails'
+gem 'will_paginate'
 
 group :development, :test do
   gem 'byebug'
