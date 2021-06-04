@@ -11,6 +11,9 @@
 
     function showResult (event) {
       list.innerHTML = event.detail[0]
+
+      const pagination = list.querySelector('.pagination')
+      pagination.addEventListener('ajax:success', showResult)
     }
 
     form.addEventListener('ajax:success', showResult)

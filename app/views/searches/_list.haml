@@ -1,7 +1,11 @@
 - if results.empty?
   %span No results
 - else
-  %span #{results.size}
+  %span
+    %b= results.total_entries
+    total entries
+  %br
+  %br
   %table{ border: 1 }
     %thead
       %td
@@ -14,5 +18,6 @@
       - results.each do |result|
         %tr
           %td= result.query
-          %td= result.icon_url
+          %td= image_tag result.icon_url
           %td= result.value
+  = will_paginate results, renderer: WillPaginateLinkRenderer
