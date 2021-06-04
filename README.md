@@ -2,6 +2,7 @@
 
 - Clone the repository
 - Execute `bundle install`
+- Execute `yarn install`
 - Execute `rails db:setup`
 - To run tests execute `rspec`
 
