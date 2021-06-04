@@ -1,9 +1,9 @@
 - if results.empty?
-  %span No results
+  %span= t('.no_results')
 - else
   %span
+    = t('.total_results')
     %b= results.total_entries
-    total entries
   %br
   %br
   %table{ border: 1 }

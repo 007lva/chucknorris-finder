@@ -1,6 +1,6 @@
 = form_with(url: searches_path, scope: :search, id: 'filter', method: 'get') do |f|
   = f.text_field :query, placeholder: 'A query'
-  = f.submit 'Search'
+  = f.submit t('.submit')
 
 #results
 

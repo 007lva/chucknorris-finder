@@ -15,6 +15,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'webpacker'
 gem 'hamlit-rails'
 gem 'will_paginate'
+gem 'will-paginate-i18n'
 gem 'database_rewinder'
 gem 'httparty'
 
