@@ -1,0 +1,6 @@
+= form_with(url: searches_path, scope: :search) do |f|
+  = f.text_field :query, placeholder: 'A query', required: true
+  = f.submit 'Search'
+
+#results
+

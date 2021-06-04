@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  get '/searchs', to: 'searches#new'
+  resources :searches, except: %i[new destroy]
 end

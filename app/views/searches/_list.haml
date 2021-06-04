@@ -1,0 +1,18 @@
+- if results.empty?
+  %span No results
+- else
+  %span #{results.size}
+  %table
+    %thead
+      %td
+        Query
+      %td
+        Icon
+      %td
+        value
+    %tbody
+      - results.each do |result|
+        %tr
+          %td= result.query
+          %td= result.icon_url
+          %td= result.value
