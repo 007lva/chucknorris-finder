@@ -3,7 +3,8 @@ class SearchesController < ApplicationController
     respond_to do |format|
       format.html {}
       format.js do
-        render(partial: 'lista', locals: { results: Result.all }, content_type: 'text/plain')
+        results = Result.paginate(page: params[:page], per_page: 10)
+        render(partial: 'list', locals: { results: results }, content_type: 'text/plain')
       end
     end
   end

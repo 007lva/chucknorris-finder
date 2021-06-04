@@ -1,6 +1,18 @@
-= form_with(url: searches_path, scope: :search) do |f|
-  = f.text_field :query, placeholder: 'A query', required: true
+= form_with(url: searches_path, scope: :search, id: 'filter', method: 'get') do |f|
+  = f.text_field :query, placeholder: 'A query'
   = f.submit 'Search'
 
 #results
 
+:javascript
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('#filter')
+    const list = document.querySelector('#results')
+
+    function showResult (event) {
+      list.innerHTML = event.detail[0]
+    }
+
+    form.addEventListener('ajax:success', showResult)
+    form.commit.click()
+  })
