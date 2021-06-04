@@ -2,5 +2,7 @@ en:
   searches:
     index:
       submit: Search
+      query: Query
+    list:
       no_results: No results
       total_results: Total results

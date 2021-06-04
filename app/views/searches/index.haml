@@ -1,5 +1,6 @@
-= form_with(url: searches_path, scope: :search, id: 'filter', method: 'get') do |f|
-  = f.text_field :query, placeholder: 'A query'
+= form_with(url: searches_path(), scope: :search, id: 'filter', method: 'get') do |f|
+  = f.text_field :query, placeholder: t('.query')
+  = hidden_field_tag('es', nil) if params.key?(:es)
   = f.submit t('.submit')
 
 #results
