@@ -15,6 +15,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'webpacker'
 gem 'hamlit-rails'
 gem 'will_paginate'
+gem 'database_rewinder'
 
 group :development, :test do
   gem 'byebug'
